@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Collar TTS Service - Test Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 Blue Collar Interview System</h1>
+            <p>Voice-First Portfolio Builder</p>
+        </header>
+
+        <div class="card">
+            <h2>Session Control</h2>
+            <div class="button-group">
+                <button id="startBtn" class="btn btn-primary">Start Session</button>
+                <button id="nextBtn" class="btn btn-secondary" disabled>Next Question</button>
+                <button id="repeatBtn" class="btn btn-secondary" disabled>Repeat Question</button>
+                <button id="endBtn" class="btn btn-danger" disabled>End Session</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Session Info</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Progress:</span>
+                    <span id="questionIndex" class="value">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Job Role:</span>
+                    <span id="occupation" class="value">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Status:</span>
+                    <span id="sessionStatus" class="value">Ready</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Current Question</h2>
+            <div id="questionText" class="question-text">Click "Start Session" to begin</div>
+            
+            <div class="answer-section">
+                <label for="answerInput">Your Answer:</label>
+                <input type="text" id="answerInput" placeholder="Type your answer here..." disabled>
+            </div>
+
+            <div class="audio-section">
+                <audio id="audioPlayer" controls></audio>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Activity Log</h2>
+            <div id="responseLog" class="log"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
