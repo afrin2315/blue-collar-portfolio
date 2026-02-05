@@ -79,7 +79,7 @@ const commonQuestions = [
     type: "yesno",
     section: "tools",
     order: 7,
-    skipIf: ["Driver", "Security Guard", "Delivery Executive"]
+    skipIf: ["Driver", "Security Guard", "Delivery Executive", "Cook", "Housekeeping", "Factory Worker"]
   },
   {
     id: "can_bring_tools",
